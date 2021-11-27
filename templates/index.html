@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>YouTube Downloader</title>
+</head>
+
+<body>
+    <div class="input-container">
+        <input type="text" name="url" id="url" class="form-control me-3">
+        <button type="button" class="btn btn-outline-primary ms-sm-3" id="download-btn">Download</button>
+    </div>
+    <div class="show-details mt-5">
+        <div id="thumbnail">
+            <img src="" alt="cannot load picture" id="thumbnail-img">
+        </div>
+        <div class="right-details ms-3">
+            <div class="title"></div>
+            <div class="size mt-2"></div>
+
+            <div class="dropdown mt-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Download
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" id="video-720"><span class="me-5">Video/MP4</span>720p</a></li>
+                    <li><a class="dropdown-item" id="video-360"><span class="me-5">Video/MP4</span>360p</a></li>
+                    <li><a class="dropdown-item" id="audio-48"><span class="me-5">Audio/MP3</span>48kbps</a></li>
+                    <li><a class="dropdown-item" id="audio-128"><span class="me-5">Audio/MP3</span>128kbps</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="toast">Sample text</div>
+    <script src="../static/js/index.js"></script>
+</body>
+
+</html>
